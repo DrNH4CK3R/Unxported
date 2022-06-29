@@ -1,1 +1,309 @@
-ew
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body{
+    background-color: black;
+}
+
+/* ---- MENU BAR ---- */
+
+.logo{
+    position: absolute;
+    width: 71px;
+    height: 71px;
+    left: 45px;
+    top: 10px;    
+}
+.logotxt{
+    position: absolute;
+    width: 142px;
+    height: 33px;
+    left: 120px;
+    top: 8px;
+    
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 33px;
+    
+    
+    background: linear-gradient(96.13deg, #FFFFFF -18.49%, #FFFFFF 138.6%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.menu{
+    width: 100%;
+    top: 0;
+    height: 100px;
+    position: fixed;
+    background-color: #000000;
+}
+.menu ul{
+    position: absolute;
+    right: 200px;
+    top: 25px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.menu ul li{
+    float: left;
+}
+.menutxt{
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    
+    color: #FFFFFF;
+    opacity: 25%;
+}
+.active{
+    opacity: 1;
+}
+.btn1{
+    position: absolute;
+    display: flex;
+    width: 140px;
+    height: 29px;
+    top: 40px;
+    right: 45px;
+
+    background: linear-gradient(91.39deg, #03DF96 -11.91%, #00E8FF 121.43%);
+    border-radius: 10px;
+
+    transition-duration: 0.4s;
+    overflow: hidden;
+    cursor: pointer;
+}
+.btn1:after{
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+.btn1:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+.btn1 a{
+    position: absolute;
+    top: 0px;
+    left: 22px;
+
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 29px;
+    
+    color: #000000;
+    text-decoration: none;
+}
+
+
+/* ---- LANDING PAGE ---- */
+
+.landpage{
+    position: relative;
+
+    height: 850px;
+
+    background-image: url(./images/bg.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.head1{
+    position: absolute;
+    top: 170px;
+    
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 75px;
+    line-height: 91px;
+    text-align: center;
+    
+    background: linear-gradient(91.1deg, #FFFFFF 10.32%, #FFFFFF 54.55%, #FFFFFF 100.25%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.subhead1{
+    position: absolute;
+    width: 708px;
+    height: 100px;
+    left: 402px;
+    top: 500px;
+    
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 25px;
+    text-align: center;
+    
+    color: #ADADAD;
+}
+.btn21{
+    width: 90px;
+    top: 680px;
+    left: 650px;
+
+    box-shadow: 0px 4px 19px #03DF96;
+}
+.btn22{
+    width: 90px;
+    top: 680px;
+    left: 770px;
+
+    box-shadow: 0px 4px 19px #03DF96;
+}
+
+.addr{
+    position: relative;
+    top: 680px;
+    height: 200px;
+    
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 200px;
+    text-align: center;
+    
+    background: linear-gradient(90deg, #FFFFFF 39%, #00E8FF 15%, #03DF58 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* ---- ABOUT ---- */
+
+.about{
+    position: relative;
+}
+.head2{
+    position: absolute;
+    top: 20px;
+    right: 200px;
+
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+    text-transform: uppercase;
+    
+    color: #616363;
+    
+    transform: rotate(90deg);
+}
+.abouttxt{
+    position: absolute;
+    width: 1047px;
+    right: 280px;
+    top: 55px;
+
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 26px;
+    text-align: right;
+    
+    color: #FFFFFF;
+}
+
+/* ---- ROADMAP ---- */
+
+.roadtxt{
+    position: absolute;
+    top: 300px;
+    left: 50px;
+
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+    text-transform: uppercase;
+    
+    color: #616363;
+    
+    transform: rotate(-90deg);
+}
+.line1{
+    position: absolute;
+    width: 1510.53px;
+    height: 0px;
+    left: 25px;
+    top: 1110px;
+
+    transform: rotate(90deg);
+    color: linear-gradient(90deg, #00E8FF 50%, #03DF96 100%);
+}
+.roadp{
+    position: absolute;
+    width: 363px;
+    height: 189px;
+    left: 830px;
+    top: 490px;
+    
+    background: rgba(78, 79, 79, 0.2);
+    box-shadow: 0px 4px 39px #03DF96;
+}
+.roadhead{
+    position: absolute;
+    top: 5px;
+    left: 20px;
+
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 26px;
+    text-transform: uppercase;
+    
+    color: #03DF96;
+}
+.roadpara{
+    position: absolute;
+    top: 40px;
+    left: 20px;
+
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 26px;
+
+    color: #FFFFFF;
+}
+.div2{
+    left: 370px;
+    top: 790px;
+}
+.div3{
+    top: 1090px;
+}
+.div4{
+    top: 1400px;
+    left: 370px;
+}
+.div5{
+    top: 1700px;
+}
+
+
+
+.cards{
+    position: relative;
+    height: 100px;
+}
