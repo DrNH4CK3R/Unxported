@@ -31,6 +31,84 @@ body{
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
+
+
+.menubar{
+    width: 100%;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    position: fixed;
+    background-color: #000000;
+}
+.menu a{
+    text-decoration: none;
+}
+.menu li{
+    list-style: none;
+}
+/* NAVBAR STYLING STARTS */
+.navbar {
+    
+    color: #fff;
+}
+.nav-links{
+    position: absolute;
+    right: 15%;
+    top: 20%;
+}
+.nav-links a {
+    font-family: 'Inter';
+    color: #fff;
+}
+   /* NAVBAR MENU */
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+}
+.menu li {
+    padding: 5px 14px;
+}
+/*RESPONSIVE NAVBAR MENU STARTS*/
+/* CHECKBOX HACK */
+input[type=checkbox]{
+    display: none;
+} 
+/*HAMBURGER MENU*/
+.hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+}
+
+@media (max-width: 768px) {
+    .menu { 
+     display:none;
+     position: absolute;
+     width: 100%;
+     backdrop-filter: blur(500px);
+     right: 25%;
+     left: 25%;
+     text-align: center;
+     padding: 50px 0;
+    }
+    .menu li + li {
+     margin-top: 17px;
+    }
+    input[type=checkbox]:checked ~ .menu{
+     display: block;
+    }
+    .hamburger {
+        color: #FFFFFF;
+        display: block;
+    }
+}
+
+
+/*
 .menu{
     width: 100%;
     top: 0;
@@ -67,13 +145,16 @@ body{
 .active{
     opacity: 1;
 }
+*/
 .btn1{
     position: absolute;
     display: flex;
     width: 140px;
     height: 29px;
+    /*
     top: 40px;
     right: 45px;
+    */
 
     background: linear-gradient(91.39deg, #03DF96 -11.91%, #00E8FF 121.43%);
     border-radius: 10px;
@@ -146,7 +227,7 @@ body{
     position: absolute;
     width: 708px;
     height: 100px;
-    left: 402px;
+    left: 26%;
     top: 500px;
     
     font-family: 'Inter', sans-serif;
@@ -160,14 +241,14 @@ body{
 .btn21{
     width: 90px;
     top: 680px;
-    left: 650px;
+    left: 43%;
 
     box-shadow: 0px 4px 19px #03DF96;
 }
 .btn22{
     width: 90px;
     top: 680px;
-    left: 770px;
+    left: 53%;
 
     box-shadow: 0px 4px 19px #03DF96;
 }
@@ -189,6 +270,39 @@ body{
     background-clip: text;
 }
 
+@media screen and (max-width: 768px) {
+    .head1{
+        top: 120px;
+        width: 337px;
+        left: 5%;
+        font-size: 47px;
+        font-weight: 500;
+        text-align: left;
+    }
+    .subhead1{
+        width: 337px;
+        height: 133px;
+        left: 5%;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: left;
+    }
+    .btn22{
+        top: 740px;
+        left: 43%;
+    }
+    .addr{
+        width: 302px;
+        height: 36px;
+        font-size: 13px;
+        line-height: 18px;
+        text-align: left;
+        top: 800px;
+        left: 7%;
+    }
+}
+
 /* ---- ABOUT ---- */
 
 .about{
@@ -197,7 +311,7 @@ body{
 .head2{
     position: absolute;
     top: 20px;
-    right: 150px;
+    right: 10%;
 
     font-family: 'Inter', sans-serif;
     font-weight: 500;
@@ -212,7 +326,7 @@ body{
 .abouttxt{
     position: absolute;
     width: 1047px;
-    right: 280px;
+    right: 18%;
     top: 55px;
 
     font-family: 'Poppins';
@@ -224,12 +338,30 @@ body{
     color: #FFFFFF;
 }
 
+@media screen and (max-width: 768px) {
+    .head2{
+
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+    }
+    .abouttxt{
+        width: 336px;
+        height: 153px;
+        right: 22%;
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 16px;
+    }
+    
+}
+
 /* ---- ROADMAP ---- */
 
 .roadtxt{
     position: absolute;
     top: 300px;
-    left: 50px;
+    left: 2%;
 
     font-family: 'Inter', sans-serif;
     font-weight: 500;
@@ -241,15 +373,28 @@ body{
     
     transform: rotate(-90deg);
 }
+@media screen and (max-width: 768px) {
+    .roadtxt{
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+    }
+}
+
 .line1{
     position: absolute;
     width: 1510.53px;
     height: 0px;
-    left: 25px;
+    left: 1.5%;
     top: 1110px;
 
     transform: rotate(90deg);
     color: linear-gradient(90deg, #00E8FF 50%, #03DF96 100%);
+}
+@media screen and (max-width: 768px) {
+    .line1{
+        left: -145%;
+    }
 }
 .roadp{
     position: absolute;
@@ -261,6 +406,13 @@ body{
     background: rgba(78, 79, 79, 0.2);
     box-shadow: 0px 4px 39px #03DF96;
     border-radius: 15px;
+}
+@media screen and (max-width: 768px) {
+    .roadp{
+        left: 27%;
+        width: 290px;
+        height: 148.46px;
+    }
 }
 .roadhead{
     position: absolute;
@@ -287,6 +439,19 @@ body{
 
     color: #FFFFFF;
 }
+@media screen and (max-width: 768px) {
+    .roadhead {
+        top: 0;
+        font-size: 15.6553px;
+        line-height: 16px;
+    }
+    .roadpara{
+        top: 30px;
+        font-size: 14.6553px;
+        line-height: 22px;
+    }
+    
+}
 .div2{
     left: 370px;
     top: 790px;
@@ -301,6 +466,20 @@ body{
 .div5{
     top: 1700px;
 }
+@media screen and (max-width: 768px) {
+    .div2{
+        left: 27%;
+    }
+    .div3{
+        left: 27%;
+    }
+    .div4{
+        left: 27%;
+    }
+    .div5{
+        left: 27%;
+    }
+}
 
 /* ---- TEAM ---- */
 
@@ -310,7 +489,7 @@ body{
 .teamHead{
     position: absolute;
     top: 2500px;
-    left: 50px;
+    left: 2%;
     
     font-family: 'Inter', sans-serif;
     font-weight: 500;
@@ -322,6 +501,15 @@ body{
         
     transform: rotate(-90deg);
 }
+@media screen and (max-width: 768px) {
+    .teamHead{
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+    }
+}
+
+
 .teamCard{
     position: absolute;
     width: 254px;
